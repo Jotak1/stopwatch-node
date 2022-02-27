@@ -45,14 +45,14 @@ const getLapsByName = (req, res) => __awaiter(void 0, void 0, void 0, function* 
                 name,
             },
         });
-        res.json({
+        res.status(200).json({
             code: 200,
             data: stopwatch,
         });
     }
     catch (error) {
         console.log(error);
-        res.json({
+        res.status(500).json({
             code: 500,
             message: "Error al obtener los datos",
             data: {},
