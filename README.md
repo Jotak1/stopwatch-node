@@ -8,14 +8,16 @@ StopWatch is a simple stopwatch application that allows you to start, stop, and 
 
     - [Node.js](https://nodejs.org/en/) (v14.x or higher)
     - [Express](https://expressjs.com/)
+    - [postgresql](https://www.postgresql.org/)
+    
 
 ## Installation
 
 ```bash
 
-    git clone
+    git clone 
 
-    cd StopWatch
+    cd stopwatch-node
 
     npm install
 
@@ -55,7 +57,7 @@ After creating the database and user, you need to create a table with script in 
 
 ````bash
 
-    sudo -u postgres psql -d stopwatch -f /sqlscript/create_table.sql
+    sudo -u postgres psql -d stopwatch -f ./sqlscript/create_table.sql
 
 ````
 
